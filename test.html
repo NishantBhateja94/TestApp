@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <link rel="stylesheet" href="css/custom/designer.css">
+<script src="testmodel/questionController.js"></script>
+       <script src="js/custom/util/util.js"></script>
+       
+       <!-- <script src="questionmodel/question.js"></script>
+        <script src="questionmodel/questionmodel.js"></script> -->
+        <!-- <script src="testmodel/question.js"></script> -->
+        
+</head>
+
+<body class="question-body">
+    <div class="container well test-panel">
+            <p class="timer">Time Left :  <span id="timercount"></span> seconds</p>
+            <div id="status">
+        
+            </div>
+            <hr>
+            <div class="form-group">
+                <fieldset>
+                    <legend class="testHeading">Test Started</legend>
+                    <p id="printquestion"></p>
+                    <input type="radio" id="radio1"  name="ans"><span class="radioEdit" id="optionone"></span>
+                    <br>
+                    <input type="radio" id="radio2" name="ans"><span class="radioEdit" id="optiontwo"></span>
+                    <br>
+                    <input type="radio" id="radio3" name="ans"><span class="radioEdit" id="optionthree"></span>
+                    <br>
+                    <input type="radio" id="radio4" name="ans"><span class="radioEdit" id="optionfour"></span>
+                    <br>
+                    <br>
+                    <!-- <button class="btn btn-primary" id="prev">Prev</button>&nbsp;&nbsp;&nbsp;&nbsp; -->
+                    <button class="btn btn-primary" id="next">Next</button>  &nbsp;&nbsp;&nbsp;&nbsp; 
+                  <button class="btn btn-success" id="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-success" id="finish">Finish</button>
+                    <h1 class="testHeading"><span id="testScore"></span></h1>
+                </fieldset>
+                <p class="timer"><u>Note:</u>  Choose one option from four,click on Submit,then click on Next.</p>
+            </div>
+            
+    </div>
+    
+    
+</body>
+</html>

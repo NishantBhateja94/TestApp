@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/design.css">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+     <script src="js/custom/util/util.js"></script>
+    <script src="js/custom/util/db.js"></script>
+    
+    <script src="js/custom/controllers.js"></script>
+    
+     <script src="js/custom/user/user.js"></script>
+    <script src="js/custom/register.js"></script>
+   
+    <script src="js/custom/registerController.js"></script> 
+   <script src="js/custom/user/userOperations.js"></script>
+   
+   
+      
+    
+     <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <a id="log" class="btn btn-primary">Login</a>
+        <a  id ="Register" class="btn btn-primary" >register</a>
+        <div id="loginDiv" class="well">
+            <div class="form-group">
+               <label for="">Userid</label>
+               <input type="text" class="form-control" name="" id="User" placeholder="type userid here">
+            </div>
+            <div class="form-group">
+                <label for=""> Password</label>
+                <input type="password"  id="pwd"class="form-control" placeholder="Type Password here">
+             </div>
+             <div>
+                <select  id="check2">
+                    <option id="studentLogin" value="student" selected>Student</option>
+                    <option id="teacherLogin" value="teacher">Teacher</option>
+                </select>
+            </div><br><br><br>
+             <div class="form-group">
+                <button class="btn btn-primary" id="login">Login</button>
+             </div>
+        </div> 
+   
+   <div id="registerDiv" class="well">
+        <div class="form-group">
+           <label for="">name</label>
+           <input type="text" name="" id="users">
+        </div>
+        <div class="form-group">
+           <label for="">password</label>
+           <input type="password" name="" id="password">
+        </div>
+        
+        <div class="form-group">
+           <label for="">Phone number</label>
+           <input type="text" name="" id="no">
+        </div>
+        <div>
+            <select  id="check">
+                <option value="student" selected>Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+        </div><br><br>
+        <div class="form-group">
+           <button class="btn btn-primary" id="add">Register</button>
+        </div>
+        
+   </div>
+
+</div>
+</body>
+</html>
